@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Polinomios-División Sintética</title>
-    
-    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+    <title>Polinomios-División Sintética</title> <!-- Título de la página -->
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Archivo JavaScript externo para la lógica -->
+    
     <header>
-        <h1>División Sintética de Polinomios</h1>
+        <h1>División Sintética de Polinomios</h1> <!-- Título principal de la página -->
     </header>
+    
     <main>
-        <p>Introduce el grado del polinomio:</p>
-        <input type="number" id="grado" placeholder="Grado del polinomio" min="1">
-        <button onclick="generarCampos()">Generar Campos</button>
+        <p>Introduce el grado del polinomio:</p> <!-- Instrucción para el usuario -->
+        <input type="number" id="grado" placeholder="Grado del polinomio" min="1" step="1"> 
+        <!-- Campo para ingresar el grado del polinomio; asegura que el mínimo sea 1 -->
+        
+        <button onclick="generarCampos()">Generar Campos</button> 
+        <!-- Botón para generar los campos dinámicos de coeficientes -->
 
         <div id="campos-coeficientes" style="margin-top: 20px;"></div>
-        <button id="btn-calcular" onclick="calcular()" style="display: none;">Calcular Raíces y División</button>
+        <!-- Contenedor dinámico para los campos de coeficientes -->
 
-        <div id="resultados"></div>
-    </main>
-
+        <button id="btn-calcular" onclick="calcular()" style="display: none;">
+            Calcular Raíces y División
+        </button> 
+        <!-- Botón oculto inicialmente que aparecerá al generar los campos -->
         
+        <div id="resultados"></div>
+        <!-- Contenedor dinámico para mostrar los resultados -->
+    </main>
 </body>
 </html>

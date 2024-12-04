@@ -1,105 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente usada para todo el documento */
+    margin: 0; /* Eliminamos el margen predeterminado del navegador */
+    padding: 0; /* Eliminamos el relleno predeterminado del navegador */
+    background: #f4f6f9; /* Color de fondo del cuerpo */
+    color: #333; /* Color de texto general */
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f6f9;
-            color: #333;
-        }
-        header {
-            background: #28a745;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            letter-spacing: 1px;
-        }
-        main {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        input, button {
-            margin: 10px 5px;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        input {
-            width: calc(100% - 20px);
-            box-sizing: border-box;
-        }
-        button {
-            background: #28a745;
-            color: white;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background: #218838;
-        }
-        .resultado {
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-        .division-sintetica {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fefefe;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-        .division-sintetica table {
-            margin: 20px auto;
-            border-spacing: 0;
-            width: 100%;
-            max-width: 600px;
-            border-collapse: collapse;
-            border: 1px solid #ddd;
-        }
-        .division-sintetica th, .division-sintetica td {
-            padding: 12px;
-            text-align: center;
-            font-size: 16px;
-            border: 1px solid #ddd;
-        }
-        .division-sintetica th {
-            background-color: #28a745;
-            color: white;
-            font-weight: bold;
-        }
-        .division-sintetica tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .division-sintetica tr:hover {
-            background-color: #e9f7e9; /* Un verde claro */
-        }
-        .division-sintetica .linea {
-            border-bottom: 3px solid #28a745;
-        }
-        .highlight {
-            color: #28a745;
-            font-weight: bold;
-        }
-        .nota {
-            font-size: 14px;
-            color: #555;
-            margin-top: 10px;
-            text-align: center;
-        }
-        .empty {
-            color: #999;
-            font-style: italic;
-        }
+header {
+    background: #28a745; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 20px 0; /* Espaciado interno superior e inferior del encabezado */
+    text-align: center; /* Alineamos el contenido al centro horizontalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+}
+
+header h1 {
+    margin: 0; /* Eliminamos márgenes del título */
+    font-size: 24px; /* Tamaño de fuente del título */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+main {
+    margin: 20px auto; /* Margen superior/inferior y centrado horizontal */
+    padding: 20px; /* Espaciado interno de la sección principal */
+    max-width: 900px; /* Ancho máximo del contenedor */
+    background: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor principal */
+}
+
+input, button {
+    margin: 10px 5px; /* Margen externo para separación */
+    padding: 12px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+input {
+    width: calc(100% - 20px); /* Ancho del input ajustado al contenedor */
+    box-sizing: border-box; /* Incluimos el borde en el ancho total */
+}
+
+button {
+    background: #28a745; /* Fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background 0.3s ease; /* Transición suave del fondo al interactuar */
+}
+
+button:hover {
+    background: #218838; /* Fondo del botón al pasar el ratón por encima */
+}
+
+.resultado {
+    margin-top: 20px; /* Margen superior para separación */
+    padding: 20px; /* Relleno interno */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.division-sintetica {
+    margin-top: 20px; /* Separación superior */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fefefe; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.division-sintetica table {
+    margin: 20px auto; /* Separación superior e inferior, centrado horizontal */
+    border-spacing: 0; /* Espaciado entre celdas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Ancho máximo de la tabla */
+    border-collapse: collapse; /* Colapsa bordes de celdas contiguas */
+    border: 1px solid #ddd; /* Borde de la tabla */
+}
+
+.division-sintetica th, .division-sintetica td {
+    padding: 12px; /* Espaciado interno de celdas */
+    text-align: center; /* Texto centrado */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+.division-sintetica th {
+    background-color: #28a745; /* Fondo de las cabeceras */
+    color: white; /* Color del texto de las cabeceras */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.division-sintetica tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo para filas pares */
+}
+
+.division-sintetica tr:hover {
+    background-color: #e9f7e9; /* Fondo al pasar el ratón sobre una fila */
+}
+
+
+
+.highlight {
+    color: #28a745; /* Color verde para resaltar */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.nota {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #555; /* Color gris oscuro */
+    margin-top: 10px; /* Separación superior */
+    text-align: center; /* Texto centrado */
+}
+
+.empty {
+    color: #999; /* Texto gris claro */
+    font-style: italic; /* Estilo de texto en cursiva */
+}
